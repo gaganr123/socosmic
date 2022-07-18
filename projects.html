@@ -19,7 +19,10 @@
       href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap"
       rel="stylesheet"
     />
-
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Vendor CSS Files -->
     <link
       href="assets/vendor/bootstrap/css/bootstrap.min.css"
@@ -59,13 +62,13 @@
             class="bg-light"
             >20% DISCOUNT OFFER..!</marquee
           >
-          <div class="col-12 d-flex gap-5">
-            <a href="index.html" class="logo mt-2 d-flex gap-2">
+          <div class="col-12 d-flex gap-3 justify-content-between">
+            <a href="index.html" class="logo mt-2 d-flex gap-3">
               <!-- Uncomment the line below if you also wish to use an image logo -->
               <img src="assets/img/logo.png" alt="logo" class="img-fluid" />
-              <h1 class="mt-3">SoCosmic</h1>
+              <h1 class="font-cosmic font-4xl mt-2">SoCosmic</h1>
             </a>
-            <form class="mt-4" style="width: 400px">
+            <form class="myform mt-4 me-4" style="width: 400px">
               <a href="projects.html#projects">
                 <input
                   type="text"
@@ -81,7 +84,7 @@
 
       <div
         class="container container-xl d-flex align-items-center justify-content-center my-1"
-        style="background-color: #a32171de"
+        style="background-color: #b65ba2"
       >
         <div class="megadropdown">
           <button class="dropbtn">
@@ -303,15 +306,16 @@
             </div>
           </section>
         </div>
-        <nav aria-label="...">
-          <ul class="pagination align-item-center justify-content-center">
-            <li class="page-item active" aria-current="page">
-              <a class="page-link bg-danger" href="#">1</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">2</a></li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <!-- End blog posts list -->
+
+        <div class="product-pagination">
+          <ul class="justify-content-center">
+            <li class="active"><a href="#">1</a></li>
+            <li><a href="#">2</a></li>
+            <li><a href="#">3</a></li>
           </ul>
-        </nav>
+        </div>
+        <!-- End blog pagination -->
       </section>
       <!-- End Our Projects Section -->
     </main>

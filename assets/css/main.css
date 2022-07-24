@@ -345,6 +345,17 @@ section {
   color: var(--color-primary);
 }
 
+.btn-shop {
+  background-color: #d38694;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 20px 10px 20px;
+}
+.btn-shop:hover {
+  background-color: var(--color-primary);
+  color: whitesmoke;
+}
 /*--------------------------------------------------------------
 # Desktop Navigation
 --------------------------------------------------------------*/
@@ -1297,6 +1308,22 @@ section {
   width: 100%;
   background-size: cover;
 }
+
+.carousel-control-prev-icons {
+  color: #b62c71;
+  font-size: 24px;
+}
+.carousel-control-prev {
+  left: -80px;
+}
+.carousel-control-next {
+  right: -80px;
+}
+.carousel-control-next-icons {
+  color: #b62c71;
+  font-size: 24px;
+}
+
 @media (max-width: 768px) {
   .hero {
     height: auto;
@@ -1305,6 +1332,13 @@ section {
   .carousel-inner img {
     /* min-height: 50px; */
     width: 100%;
+  }
+
+  .carousel-control-prev {
+    left: -10px;
+  }
+  .carousel-control-next {
+    right: -10px;
   }
 }
 

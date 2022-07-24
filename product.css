@@ -53,6 +53,30 @@
 .filter-box {
   display: flex;
 }
+
+.zoom {
+  transition: transform 0.2s;
+}
+.zoom:hover {
+  -ms-transform: scale(1.5); /* IE 9 */
+  -webkit-transform: scale(1.5); /* Safari 3-8 */
+  transform: scale(1.5);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.zoomsm {
+  transition: transform 0.2s;
+}
+.zoomsm:hover {
+  -ms-transform: scale(1.1); /* IE 9 */
+  -webkit-transform: scale(1.1); /* Safari 3-8 */
+  transform: scale(1.1);
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
 @media (max-width: 768px) {
   .filter-box {
     display: inline-block;

@@ -214,11 +214,18 @@
             <div
               class="store-product eyeshadow shadow bg-white mb-1 p-2 rounded"
             >
-              <img
-                src="assets/img/projects/Beautyglazed-12-B112-Eyeshadow_540x.webp"
-                class="img-fluid"
-                alt=""
-              />
+              <button
+                type="button"
+                class="btn btn-link"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                <img
+                  src="assets/img/projects/Beautyglazed-12-B112-Eyeshadow_540x.webp"
+                  class="zoomsm img-fluid"
+                  alt=""
+                />
+              </button>
 
               <div class="product-details">
                 <h2>Eyeshadow</h2>
@@ -233,6 +240,79 @@
               </div>
             </div>
 
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="exampleModal"
+              tabindex="-1"
+              aria-labelledby="exampleModalLabel"
+              aria-hidden="true"
+            >
+              <div
+                class="modal-dialog modal-dialog-centered modal-dialog-scrollable"
+              >
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">
+                      Product details
+                    </h5>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div class="row">
+                      <div class="col-lg-4">
+                        <img
+                          src="assets/img/projects/Beautyglazed-12-B112-Eyeshadow_540x.webp"
+                          alt=""
+                          class="zoom img-fluid p-3"
+                        />
+                      </div>
+                      <div class="col-lg-4">
+                        <img
+                          src="assets/img/projects/Beautyglazed-12-B112-Eyeshadow_540x.webp"
+                          alt=""
+                          class="zoom img-fluid p-3"
+                        />
+                      </div>
+                      <div class="col-lg-4">
+                        <img
+                          src="assets/img/projects/Beautyglazed-12-B112-Eyeshadow_540x.webp"
+                          alt=""
+                          class="zoom img-fluid p-3"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="product-details">
+                      <h2>Beauty gkazed pink-Eyeshadow</h2>
+                      <p><span>$39.99</span> $29.99</p>
+                      <a href="#">Buy Now</a>
+                      <a
+                        href="assets/img/projects/Beautyglazed-12-B112-Eyeshadow_540x.webp"
+                        target="_blank"
+                        download="mylogo"
+                        >Save to Phone</a
+                      >
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
+                </div>
+                <!-- Modal end-->
+              </div>
+            </div>
             <div
               class="store-product lipsticksLipGlazes shadow bg-white mb-1 p-2 rounded"
             >

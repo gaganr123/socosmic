@@ -92,6 +92,24 @@ document.addEventListener("DOMContentLoaded", () => {
       })
     );
   }
+  /** *scroll whatsapp */
+  const scrollwhatsapp = document.querySelector(".scroll-whatsapp");
+  if (scrollwhatsapp) {
+    const togglescrollwhatsapp = function () {
+      window.scrollY > 100
+        ? scrollwhatsapp.classList.add("active")
+        : scrollwhatsapp.classList.remove("active");
+    };
+    window.addEventListener("load", togglescrollwhatsapp);
+    document.addEventListener("scroll", togglescrollwhatsapp);
+    scrollwhatsapp.addEventListener(
+      "click",
+      window.scrollTo({
+        top: 0,
+        behavior: "smooth",
+      })
+    );
+  }
 
   /**
    * Scroll top product

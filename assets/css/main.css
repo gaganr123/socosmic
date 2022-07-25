@@ -193,8 +193,8 @@ section {
   bottom: 15px;
   z-index: 99999;
   background: var(--color-primary);
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
   border-radius: 4px;
   transition: all 0.4s;
 }
@@ -215,6 +215,36 @@ section {
   opacity: 1;
 }
 
+/* ---scroll whatsapp---- */
+.scroll-whatsapp {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 15px;
+  bottom: 55px;
+  z-index: 99999;
+  background: #25d366;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  transition: all 0.4s;
+}
+
+.scroll-whatsapp i {
+  font-size: 24px;
+  color: white;
+  line-height: 0;
+}
+
+.scroll-whatsapp:hover {
+  background: rgb(190, 109, 123);
+  color: #fff;
+}
+
+.scroll-whatsapp.active {
+  visibility: visible;
+  opacity: 1;
+}
 /*-------------scroll product---------*/
 
 .scroll-product {
@@ -254,7 +284,6 @@ section {
 .sociallink a {
   justify-content: end;
   font-size: 16px;
-  color: var(--color-primary);
 }
 .sociallink a:hover {
   color: #7e2c59;

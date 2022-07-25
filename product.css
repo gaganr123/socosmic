@@ -38,17 +38,32 @@
   font-weight: normal;
 }
 
-.product-details a {
+.fb {
   font-size: 1rem;
   text-decoration: none;
-  background-color: palevioletred;
+  background-color: #3a5795;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 3px;
 }
 
-.product-details a:hover {
-  background-color: var(--color-primary);
+.fb:hover {
+  background-color: #637bad;
+  color: whitesmoke;
+}
+
+.insta {
+  font-size: 1rem;
+  text-decoration: none;
+  background: linear-gradient(#8a3ab9, #e95950, #bc2a8d, #cd486b);
+  color: #fff;
+  padding: 0.5rem 1rem;
+  border-radius: 3px;
+}
+
+.insta:hover {
+  background: linear-gradient(#b989d4, #c77c77, #c473aa, #ce8599);
+  color: whitesmoke;
 }
 .filter-box {
   display: flex;

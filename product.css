@@ -41,14 +41,15 @@
 .fb {
   font-size: 1rem;
   text-decoration: none;
-  background-color: #3a5795;
+  background-color: blue;
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 3px;
+  font-size: 20px;
 }
 
 .fb:hover {
-  background-color: #637bad;
+  background-color: rgb(18, 18, 214);
   color: whitesmoke;
 }
 
@@ -59,6 +60,7 @@
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 3px;
+  font-size: 20px;
 }
 
 .insta:hover {
@@ -80,17 +82,6 @@
   width: 100%;
   overflow: hidden;
 }
-.zoomsm {
-  transition: transform 0.2s;
-}
-.zoomsm:hover {
-  -ms-transform: scale(1.1); /* IE 9 */
-  -webkit-transform: scale(1.1); /* Safari 3-8 */
-  transform: scale(1.1);
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-}
 
 @media (max-width: 768px) {
   .filter-box {
@@ -99,4 +90,8 @@
   .filter-box a {
     margin-top: 4px;
   }
+}
+.tabimage {
+  width: 60px;
+  height: 60px;
 }

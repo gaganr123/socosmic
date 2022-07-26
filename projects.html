@@ -115,8 +115,9 @@
       >
         <div class="megadropdown">
           <button class="dropbtn">
-            <b>HOME</b>
-            <i class="fa fa-caret-down"></i>
+            <a href="index.html"
+              ><b>HOME</b> <i class="fa fa-caret-down"></i
+            ></a>
           </button>
           <div class="megadropdown-content">
             <div class="row">
@@ -198,26 +199,40 @@
           <!-- Search box -->
           <div class="search-box">
             <form onsubmit="return false" class="d-flex my-4">
-              <input
-                class="form-control m-4 shadow bg-white mb-2 p-2 rounded-pill"
-                type="text"
-                id="search"
-                placeholder="Search product"
-                aria-label="Search"
+              <div
+                class="input-group shadow bg-white mb-2 p-1 rounded-start"
                 style="width: 300px"
-              />
-              <!-- <button id="btn-search">Search</button> -->
+              >
+                <input
+                  type="text"
+                  id="search"
+                  class="form-control border-0"
+                  placeholder="Search Product"
+                  aria-label="search"
+                  aria-describedby="button-addon2"
+                />
+                <button
+                  class="btn btn-link"
+                  type="button"
+                  id="button-addon2"
+                  style="color: red"
+                  onclick="document.getElementById('search').value=''"
+                >
+                  <i class="bi bi-x-circle-fill"></i>
+                </button>
+              </div>
             </form>
           </div>
           <div class="filter-box gap-3">
             <a href="#" class="btn active" data-filter="all">All</a>
-            <a href="#" class="btn btn-danger" data-filter="eyeshadow"
-              >Face-Makeup</a
-            >
-            <a href="#" class="btn btn-danger" data-filter="shirt"
+
+            <a href="#" class="btn btn-danger" data-filter="geleyeliner"
               >Eye-Makeup</a
             >
             <a href="#" class="btn btn-danger" data-filter="gown">Lip-Makeup</a>
+            <a href="#" class="btn btn-danger" data-filter="eyeshadow"
+              >Face-Makeup</a
+            >
             <a href="#" class="btn btn-danger" data-filter="jewelry"
               >Gift-Set</a
             >
@@ -225,7 +240,7 @@
         </div>
         <div class="slide-container">
           <section class="container" id="store-products">
-            <div class="store-product eyeshadow">
+            <div class="store-product geleyeliner">
               <button
                 type="button"
                 class="btn btn-link"
@@ -233,20 +248,20 @@
                 data-bs-target="#exampleModal"
               >
                 <img
-                  src="assets/img/projects/beautyglazed-B100-LipsticksLipGlazes-8_540x.webp"
-                  class="zoomsm img-fluid"
+                  src="assets/img/project/eyeliner.webp"
+                  class="img-main img-fluid"
                   alt=""
                 />
               </button>
 
               <div class="product-details">
-                <h2>Eyeshadow</h2>
-                <p><span>$39.99</span> $29.99</p>
+                <h2>Gel Eyeliner Cream Waterproof</h2>
+                <p><span>NRs.1000</span> NRs.600</p>
                 <a href="#" target="_blank" class="fb"
-                  >Chat On <i class="bi bi-facebook"></i
-                ></a>
+                  ><i class="bi bi-messenger"></i></a
+                >&nbsp;&nbsp;&nbsp;&nbsp;
                 <a href="" target="_blank" class="insta"
-                  >Chat On <i class="bi bi-instagram"></i
+                  ><i class="bi bi-instagram"></i
                 ></a>
               </div>
             </div>
@@ -264,9 +279,14 @@
               >
                 <div class="modal-content">
                   <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">
-                      Product details
+                    <h5
+                      class="modal-title"
+                      id="exampleModalLabel"
+                      style="font-size: 14px"
+                    >
+                      Gel Eyeliner Waterproof (Code:B23#3)
                     </h5>
+                    <p class="ms-auto">NRs.600</p>
                     <button
                       type="button"
                       class="btn-close"
@@ -275,50 +295,117 @@
                     ></button>
                   </div>
                   <div class="modal-body">
-                    <div class="row">
-                      <div class="col-lg-4">
-                        <img
-                          src="assets/img/projects/Beautyglazed-12-B112-Eyeshadow_540x.webp"
-                          alt=""
-                          class="zoom img-fluid p-3"
-                        />
-                      </div>
-                      <div class="col-lg-4">
-                        <img
-                          src="assets/img/projects/Beautyglazed-12-B112-Eyeshadow_540x.webp"
-                          alt=""
-                          class="zoom img-fluid p-3"
-                        />
-                      </div>
-                      <div class="col-lg-4">
-                        <img
-                          src="assets/img/projects/Beautyglazed-12-B112-Eyeshadow_540x.webp"
-                          alt=""
-                          class="zoom img-fluid p-3"
-                        />
-                      </div>
-                    </div>
-
-                    <div class="product-details">
-                      <h2>Beauty gkazed pink-Eyeshadow</h2>
-                      <p><span>$39.99</span> $29.99</p>
-                      <a href="#">Buy Now</a>
-                      <a
-                        href="assets/img/projects/Beautyglazed-12-B112-Eyeshadow_540x.webp"
-                        target="_blank"
-                        download="mylogo"
-                        >Save to Phone</a
+                    <div class="d-flex align-items-start">
+                      <div
+                        class="nav flex-column nav-tabs me-3"
+                        id="v-pills-tab"
+                        role="tablist"
+                        aria-orientation="vertical"
                       >
+                        <button
+                          class="btn btn-light active"
+                          id="v-pills-home-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#v-pills-home"
+                          type="button"
+                          role="tab"
+                          aria-controls="v-pills-home"
+                          aria-selected="true"
+                        >
+                          <img
+                            src="assets/img/project/eyeliner1.webp"
+                            class="tabimage"
+                            alt=""
+                          />
+                        </button>
+                        <button
+                          class="nav-link"
+                          id="v-pills-profile-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#v-pills-profile"
+                          type="button"
+                          role="tab"
+                          aria-controls="v-pills-profile"
+                          aria-selected="false"
+                        >
+                          <img
+                            src="assets/img/project/eyeliner2.webp"
+                            class="tabimage"
+                            alt=""
+                          />
+                        </button>
+                        <button
+                          class="nav-link"
+                          id="v-pills-messages-tab"
+                          data-bs-toggle="pill"
+                          data-bs-target="#v-pills-messages"
+                          type="button"
+                          role="tab"
+                          aria-controls="v-pills-messages"
+                          aria-selected="false"
+                        >
+                          <img
+                            src="assets/img/project/eyeliner3.webp"
+                            class="tabimage"
+                            alt=""
+                          />
+                        </button>
+                      </div>
+
+                      <div class="tab-content" id="v-pills-tabContent">
+                        <div
+                          class="tab-pane fade show active"
+                          id="v-pills-home"
+                          role="tabpanel"
+                          aria-labelledby="v-pills-home-tab"
+                        >
+                          <img
+                            src="assets/img/project/eyeliner1.webp"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="v-pills-profile"
+                          role="tabpanel"
+                          aria-labelledby="v-pills-profile-tab"
+                        >
+                          <img
+                            src="assets/img/project/eyeliner2.webp"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                        <div
+                          class="tab-pane fade"
+                          id="v-pills-messages"
+                          role="tabpanel"
+                          aria-labelledby="v-pills-messages-tab"
+                        >
+                          <img
+                            src="assets/img/project/eyeliner3.webp"
+                            class="img-fluid"
+                            alt=""
+                          />
+                        </div>
+                      </div>
                     </div>
+                    <h6>Description:</h6>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Ducimus odit, nisi totam hic modi tenetur a voluptatum
+                      illo veniam harum voluptates. Consectetur, laborum? Quam
+                      maxime eveniet aperiam suscipit distinctio veniam.
+                    </p>
                   </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-secondary"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
+                  <div class="modal-footer h-auto">
+                    <a href="#" target="_blank" class="fb"
+                      ><i class="bi bi-messenger"></i></a
+                    >&nbsp;&nbsp;&nbsp;&nbsp;
+                    <a href="" target="_blank" class="insta"
+                      ><i class="bi bi-instagram"></i
+                    ></a>
                   </div>
                 </div>
                 <!-- Modal end-->
@@ -341,13 +428,12 @@
               <div class="product-details">
                 <h2>LipsticksLipGlazes</h2>
                 <p><span>$39.99</span> $29.99</p>
-                <a href="#">Buy Now</a>
-                <a
-                  href="assets/img/projects/beautyglazed-B100-LipsticksLipGlazes-8_540x.webp"
-                  target="_blank"
-                  download="mylogo"
-                  >Save to Phone</a
-                >
+                <a href="#" target="_blank" class="fb"
+                  ><i class="bi bi-messenger"></i></a
+                >&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" target="_blank" class="insta"
+                  ><i class="bi bi-instagram"></i
+                ></a>
               </div>
             </div>
 
@@ -367,13 +453,12 @@
               <div class="product-details">
                 <h2>Eyeshadow</h2>
                 <p><span>$39.99</span> $29.99</p>
-                <a href="#">Buy Now</a>
-                <a
-                  href="assets/img/projects/beautyglazed-B101-Eyeshadow-2_540x.webp"
-                  target="_blank"
-                  download="mylogo"
-                  >Save to Phone</a
-                >
+                <a href="#" target="_blank" class="fb"
+                  ><i class="bi bi-messenger"></i></a
+                >&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" target="_blank" class="insta"
+                  ><i class="bi bi-instagram"></i
+                ></a>
               </div>
             </div>
 
@@ -394,13 +479,12 @@
               <div class="product-details">
                 <h2>Shirt Product</h2>
                 <p><span>$39.99</span> $29.99</p>
-                <a href="#">Buy Now</a>
-                <a
-                  href="assets/img/projects/beautyglazed-B31-LipstickLipGlaze-10_540x.webp"
-                  target="_blank"
-                  download="mylogo"
-                  >Save to Phone</a
-                >
+                <a href="#" target="_blank" class="fb"
+                  ><i class="bi bi-messenger"></i></a
+                >&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" target="_blank" class="insta"
+                  ><i class="bi bi-instagram"></i
+                ></a>
               </div>
             </div>
 
@@ -420,13 +504,12 @@
               <div class="product-details">
                 <h2>Shirt Product</h2>
                 <p><span>$39.99</span> $29.99</p>
-                <a href="#">Buy Now</a>
-                <a
-                  href="assets/img/projects/beautyglazed-B51A-Eyeshadow-4_5a2a6f5d-d2ec-47f0-aa1f-21748045724d_540x.webp"
-                  target="_blank"
-                  download="mylogo"
-                  >Save to Phone</a
-                >
+                <a href="#" target="_blank" class="fb"
+                  ><i class="bi bi-messenger"></i></a
+                >&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" target="_blank" class="insta"
+                  ><i class="bi bi-instagram"></i
+                ></a>
               </div>
             </div>
 
@@ -446,13 +529,12 @@
               <div class="product-details">
                 <h2>Shirt Product</h2>
                 <p><span>$39.99</span> $29.99</p>
-                <a href="#">Buy Now</a>
-                <a
-                  href="assets/img/projects/beautyglazed-B51C-Eyeshadow-3_540x.webp"
-                  target="_blank"
-                  download="mylogo"
-                  >Save to Phone</a
-                >
+                <a href="#" target="_blank" class="fb"
+                  ><i class="bi bi-messenger"></i></a
+                >&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" target="_blank" class="insta"
+                  ><i class="bi bi-instagram"></i
+                ></a>
               </div>
             </div>
 
@@ -472,13 +554,12 @@
               <div class="product-details">
                 <h2>Gown Product</h2>
                 <p><span>$39.99</span> $29.99</p>
-                <a href="#">Buy Now</a>
-                <a
-                  href="assets/img/projects/beautyglazed-B51E-Eyeshadow-3_20722d8f-0fc5-468e-b3f8-db2075903781_540x.webp"
-                  target="_blank"
-                  download="mylogo"
-                  >Save to Phone</a
-                >
+                <a href="#" target="_blank" class="fb"
+                  ><i class="bi bi-messenger"></i></a
+                >&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" target="_blank" class="insta"
+                  ><i class="bi bi-instagram"></i
+                ></a>
               </div>
             </div>
 
@@ -498,13 +579,12 @@
               <div class="product-details">
                 <h2>Gown Product</h2>
                 <p><span>$39.99</span> $29.99</p>
-                <a href="#">Buy Now</a>
-                <a
-                  href="assets/img/projects/beautyglazed-B51F-Eyeshadow-8_540x.webp"
-                  target="_blank"
-                  download="mylogo"
-                  >Save to Phone</a
-                >
+                <a href="#" target="_blank" class="fb"
+                  ><i class="bi bi-messenger"></i></a
+                >&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" target="_blank" class="insta"
+                  ><i class="bi bi-instagram"></i
+                ></a>
               </div>
             </div>
 
@@ -524,13 +604,12 @@
               <div class="product-details">
                 <h2>Shirt Product</h2>
                 <p><span>$39.99</span> $29.99</p>
-                <a href="#">Buy Now</a>
-                <a
-                  href="assets/img/projects/beautyglazed-B51I-Eyeshadow-2_540x.webp"
-                  target="_blank"
-                  download="mylogo"
-                  >Save to Phone</a
-                >
+                <a href="#" target="_blank" class="fb"
+                  ><i class="bi bi-messenger"></i></a
+                >&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" target="_blank" class="insta"
+                  ><i class="bi bi-instagram"></i
+                ></a>
               </div>
             </div>
 
@@ -550,13 +629,12 @@
               <div class="product-details">
                 <h2>Shirt Product</h2>
                 <p><span>$39.99</span> $29.99</p>
-                <a href="#">Buy Now</a>
-                <a
-                  href="assets/img/projects/beautyglazed-B51L-Eyeshadow-5_540x.webp"
-                  target="_blank"
-                  download="mylogo"
-                  >Save to Phone</a
-                >
+                <a href="#" target="_blank" class="fb"
+                  ><i class="bi bi-messenger"></i></a
+                >&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" target="_blank" class="insta"
+                  ><i class="bi bi-instagram"></i
+                ></a>
               </div>
             </div>
 
@@ -576,13 +654,12 @@
               <div class="product-details">
                 <h2>Jewelry Product</h2>
                 <p><span>$39.99</span> $29.99</p>
-                <a href="#">Buy Now</a>
-                <a
-                  href="assets/img/projects/beautyglazed-B51M-Eyeshadow-1_540x.webp"
-                  target="_blank"
-                  download="mylogo"
-                  >Save to Phone</a
-                >
+                <a href="#" target="_blank" class="fb"
+                  ><i class="bi bi-messenger"></i></a
+                >&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" target="_blank" class="insta"
+                  ><i class="bi bi-instagram"></i
+                ></a>
               </div>
             </div>
 
@@ -602,13 +679,12 @@
               <div class="product-details">
                 <h2>Jewelry Product</h2>
                 <p><span>$39.99</span> $29.99</p>
-                <a href="#">Buy Now</a>
-                <a
-                  href="assets/img/projects/beautyglazed-B57-LipsticksLipGlazes-10_540x.webp"
-                  target="_blank"
-                  download="mylogo"
-                  >Save to Phone</a
-                >
+                <a href="#" target="_blank" class="fb"
+                  ><i class="bi bi-messenger"></i></a
+                >&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" target="_blank" class="insta"
+                  ><i class="bi bi-instagram"></i
+                ></a>
               </div>
             </div>
 
@@ -628,13 +704,12 @@
               <div class="product-details">
                 <h2>gagan Product</h2>
                 <p><span>$39.99</span> $29.99</p>
-                <a href="#">Buy Now</a>
-                <a
-                  href="assets/img/projects/beautyglazed-B57-LipsticksLipGlazes-2_540x.webp"
-                  target="_blank"
-                  download="mylogo"
-                  >Save to Phone</a
-                >
+                <a href="#" target="_blank" class="fb"
+                  ><i class="bi bi-messenger"></i></a
+                >&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" target="_blank" class="insta"
+                  ><i class="bi bi-instagram"></i
+                ></a>
               </div>
             </div>
 
@@ -654,13 +729,12 @@
               <div class="product-details">
                 <h2>Jewelry Product</h2>
                 <p><span>$39.99</span> $29.99</p>
-                <a href="#">Buy Now</a>
-                <a
-                  href="assets/img/projects/beautyglazed-B83LipstickBlush-Blush-8_540x.webp"
-                  target="_blank"
-                  download="mylogo"
-                  >Save to Phone</a
-                >
+                <a href="#" target="_blank" class="fb"
+                  ><i class="bi bi-messenger"></i></a
+                >&nbsp;&nbsp;&nbsp;&nbsp;
+                <a href="" target="_blank" class="insta"
+                  ><i class="bi bi-instagram"></i
+                ></a>
               </div>
             </div>
           </section>
